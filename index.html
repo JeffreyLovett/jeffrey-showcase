@@ -8,7 +8,27 @@
   <meta property="og:title" content="Jeffrey Lovett — Ugotta Group | Showcase" />
   <meta property="og:description" content="Quick, elegant hub for business & personal profiles with contact and socials." />
   <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#111315" />
+  <meta name="theme-color" content="#111315" 
+    />a.btn {
+  display:inline-block;
+  padding:.6rem 1.1rem;
+  border-radius:999px;
+  background: var(--accent, #FF7A00);
+  color:#fff;
+  font-weight:600;
+  text-decoration:none;
+  margin-top:1rem;
+  border:1px solid var(--accent, #FF7A00);
+  transition: all .3s ease;
+  box-shadow: 0 6px 16px rgba(0,0,0,.25);
+}
+a.btn:hover {
+  background: transparent;
+  color: var(--secondary, #00f544);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0,0,0,.32);
+}
+
   <style>
     :root{
       --bg: #0f1113;
@@ -122,11 +142,12 @@
       </div>
     </section>
 
-    <footer class="footer">
-      <span>© <span id="y"></span> Ugotta Group · All rights reserved</span>
-      <span>This page is static & fast — hosted on GitHub Pages</span>
-    </footer>
-  </div>
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
-</body>
-</html>
+   <footer class="footer" style="text-align:center; margin-top:40px">
+  <span>© <span id="y"></span> Ugotta Group · All rights reserved</span><br>
+  <span>This page is static & fast — hosted on GitHub Pages</span><br><br>
+
+  <!-- Back button -->
+  <a class="btn" href="https://ugottagroup.com" target="_blank" rel="noreferrer">← Back to Ugotta Group</a>
+</footer>
+
+
