@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jeffrey Lovett — Ugotta Group | Showcase</title>
+  <meta name="description" content="Showcase landing for Jeffrey Lovett & Ugotta Group — links, profiles, and contact." />
+  <meta property="og:title" content="Jeffrey Lovett — Ugotta Group | Showcase" />
+  <meta property="og:description" content="Quick, elegant hub for business & personal profiles with contact and socials." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#111315" />
+  <style>
+    :root{
+      --bg: #0f1113;
+      --card:#15181c;
+      --muted:#a8b3c1;
+      --text:#f5f7fa;
+      --accent:#FF7A00;
+      --accent-hi:#FF9A2E;
+      --accent-lo:#D35A00;
+      --radius: 18px;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    body{margin:0; background: var(--bg); color:var(--text); font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;}
+    .container{max-width:1100px; margin:0 auto; padding:28px;}
+    .nav{display:flex; align-items:center; justify-content:space-between; gap:12px;}
+    .brand{display:flex; align-items:center; gap:14px; text-decoration:none; color:var(--text)}
+    .brand h1{font-size:20px; margin:0; letter-spacing:.3px}
+    .pill{padding:8px 12px; border-radius:999px; border:1px solid #262a30; background:#121519; color:var(--muted); text-decoration:none}
+
+    .hero{display:grid; grid-template-columns:1.2fr .8fr; gap:24px; align-items:center; margin-top:32px}
+    @media (max-width:900px){.hero{grid-template-columns:1fr;}}
+
+    .card{background:linear-gradient(180deg, rgba(255,122,0,.05), transparent 20%), var(--card); border:1px solid #262a30; border-radius:var(--radius); padding:24px; box-shadow:var(--shadow)}
+    .title{font-size:42px; line-height:1.1; margin:0 0 10px 0}
+    .subtitle{color:var(--muted); margin:0 0 24px}
+
+    .cta{display:flex; flex-wrap:wrap; gap:12px; margin-top:18px}
+    .btn{--bg: #1a1f25; display:inline-flex; align-items:center; gap:10px; padding:12px 16px; border-radius:12px; background:var(--bg); border:1px solid #2a2f37; color:var(--text); text-decoration:none; box-shadow:0 6px 20px rgba(0,0,0,.2); transition: transform .15s ease, box-shadow .15s ease}
+    .btn:hover{transform: translateY(-1px); box-shadow:0 10px 24px rgba(0,0,0,.28)}
+    .btn.primary{--bg:linear-gradient(180deg, var(--accent-hi), var(--accent)); border-color:#ff7a00; color:#1a120a; font-weight:600}
+
+    .stack{display:grid; grid-template-columns:repeat(2,1fr); gap:16px}
+    @media (max-width:700px){.stack{grid-template-columns:1fr}}
+
+    .stack .mini{padding:18px; border-radius:14px; background: #111417; border:1px solid #262a30}
+    .k{display:block; font-size:12px; color:#8894a3; text-transform:uppercase; letter-spacing:.08em}
+    .v{display:block; font-size:16px; color:#dde4ee; margin-top:2px}
+
+    .grid{display:grid; grid-template-columns:repeat(12,1fr); gap:18px; margin-top:28px}
+    .col-6{grid-column: span 6}
+    .col-12{grid-column: span 12}
+    @media (max-width:900px){.col-6{grid-column: span 12}}
+
+    .profile{display:flex; align-items:center; gap:14px}
+    .avatar{width:56px; height:56px; border-radius:14px; background:#0e1114; border:1px solid #2a2f37; display:grid; place-items:center}
+
+    .list{display:grid; grid-template-columns:repeat(auto-fit, minmax(180px,1fr)); gap:12px}
+    .tag{display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border-radius:999px; background:#111417; border:1px solid #262a30; color:#cbd5e1; text-decoration:none;}
+
+    .footer{display:flex; align-items:center; justify-content:space-between; margin-top:40px; color:#8e9aad; font-size:14px}
+    .footer a{color:#b6c1cf}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="nav">
+      <a class="brand" href="#"><h1>Ugotta Group</h1></a>
+      <a class="pill" href="mailto:jeffreylovett@ugottagroup.com">Contact</a>
+    </nav>
+
+    <section class="hero">
+      <div class="card">
+        <h2 class="title">Jeffrey Lovett</h2>
+        <p class="subtitle">Founder @ Ugotta Group · AI & product systems · Builder mindset. Driving tools, agents, automation, and services across Web3, content creation, ecommerce, and gaming — all tied together with productivity-focused solutions that help creators and businesses grow.</p>
+        <div class="stack">
+          <div class="mini"><span class="k">Business</span><span class="v">Ugotta Group LLC</span></div>
+          <div class="mini"><span class="k">Focus</span><span class="v">AI integrations, automation, creator tools</span></div>
+          <div class="mini"><span class="k">Location</span><span class="v">Pennsylvania, USA</span></div>
+          <div class="mini"><span class="k">Availability</span><span class="v">Open to collabs & partnerships</span></div>
+        </div>
+        <div class="cta" style="margin-top:20px">
+          <a class="btn primary" href="mailto:jeffreylovett@ugottagroup.com">Email me</a>
+          <a class="btn" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn" href="https://x.com/" target="_blank" rel="noreferrer">X / Twitter</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card col-6">
+        <h3 style="margin-top:0">Social & Links</h3>
+        <div class="list">
+          <a class="tag" href="https://github.com/" target="_blank">GitHub</a>
+          <a class="tag" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+          <a class="tag" href="https://x.com/" target="_blank">X / Twitter</a>
+          <a class="tag" href="#" target="_blank">Ugot2AI</a>
+          <a class="tag" href="#" target="_blank">Web3 Hub</a>
+          <a class="tag" href="#" target="_blank">Linktree (soon)</a>
+        </div>
+      </div>
+      <div class="card col-6">
+        <h3 style="margin-top:0">Contact</h3>
+        <p style="color:var(--muted); margin-top:0">Email is best. For quick intros, DM on LinkedIn or X. Calendly link available on request.</p>
+        <div class="cta">
+          <a class="btn primary" href="mailto:jeffreylovett@ugottagroup.com">Say hello</a>
+          <a class="btn" href="#">Download vCard</a>
+        </div>
+      </div>
+      <div class="card col-12">
+        <h3 style="margin-top:0">Blogs & Publications</h3>
+        <p style="color:var(--muted); margin-top:0">Long-form thoughts, product notes, and research drops. We'll connect the profiles here once they're live.</p>
+        <div class="list">
+          <a class="tag" href="#" target="_blank">Medium</a>
+          <a class="tag" href="#" target="_blank">Substack</a>
+          <a class="tag" href="#" target="_blank">Mirror (Web3)</a>
+          <a class="tag" href="#" target="_blank">Dev.to</a>
+          <a class="tag" href="#" target="_blank">GitHub Pages Blog</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© <span id="y"></span> Ugotta Group · All rights reserved</span>
+      <span>This page is static & fast — hosted on GitHub Pages</span>
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
